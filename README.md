@@ -1,6 +1,6 @@
 # Bot Army Command Center
 
-![Bot Army Screenshot](./public/screenshot.png) <!-- Add your screenshot file -->
+
 
 A React application for managing your army of battle bots with a sleek red command interface.
 
