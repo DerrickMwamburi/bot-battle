@@ -1,12 +1,64 @@
-# React + Vite
+# Bot Army Command Center
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Bot Army Screenshot](./public/screenshot.png) <!-- Add your screenshot file -->
 
-Currently, two official plugins are available:
+A React application for managing your army of battle bots with a sleek red command interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- 🏗 View all available battle bots in the collection
+- ⚔️ Enlist bots to your personal army
+- 🗑 Discharge bots permanently
+- 🔄 Release bots back to the collection
+- 🔍 View detailed bot specifications
+- 🎨 Red-themed command interface with animations
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+- React.js
+- Vite
+- JSON Server (for mock backend)
+- CSS3 (with custom variables and animations)
+
+## Installation
+
+1. Clone the repository after forking
+   ```bash
+   git clone git@github.com:DerrickMwamburi/bot-battle.git
+   cd bot-army
+
+  ## Project Structure
+
+   bot-army/
+├── src/
+│   ├── components/
+│   │   ├── BotCollection.jsx
+│   │   ├── BotSpecs.jsx
+│   │   └── YourBotArmy.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── index.css
+│   └── assets/              # For images
+├── db.json                 # Database of bots
+├── public/                 # Static files
+└── README.md
+
+Contributing
+Fork the project
+
+Create your feature branch (git checkout -b feature/AmazingFeature)
+
+Commit your changes (git commit -m 'Add some amazing feature')
+
+Push to the branch (git push origin feature/AmazingFeature)
+
+Open a Pull Request
+
+License
+Distributed under the MIT License. See LICENSE for more information.
+
+Contact
+Derrick Mwamburi
+
+Project Link: https://github.com/DerrickMwamburi/bot-army
+
