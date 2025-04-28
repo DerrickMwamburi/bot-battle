@@ -11,8 +11,11 @@ function App() {
   useEffect(() => {
     const fetchBots = async () => {
       try {
-        const response = await fetch('http://localhost:3000/bots');
+        const response = await fetch('https://bot-battle-f37w.onrender.com/bots');
         if (!response.ok) {
+          if (response.status === 404) {
+            throw new Error('Bots data not found (404). Please check the API URL.');
+          }
           throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
@@ -44,8 +47,11 @@ function App() {
       setBots(bots.filter(bot => bot.id !== botId));
       setArmy(army.filter(bot => bot.id !== botId));
       
-      const response = await fetch(`http://localhost:3000/bots/${botId}`, {
+      const response = await fetch(`https://bot-battle-f37w.onrender.com/bots/${botId}`, {
         method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json',
+        },
       });
       
       if (!response.ok) {
